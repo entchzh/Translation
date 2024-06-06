@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translation API Link Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Translation API Link Generator</h1>
+        <form id="linkForm">
+            <label for="text">Text to Translate:</label>
+            <input type="text" id="text" name="text" required>
+            
+            <label for="source">Source Language (e.g., ko):</label>
+            <input type="text" id="source" name="source" required>
+            
+            <label for="target">Target Language (e.g., en):</label>
+            <input type="text" id="target" name="target" required>
+            
+            <button type="submit">Generate Link</button>
+        </form>
+        <div class="output">
+            <p id="generatedLink"></p>
+            <button id="copyButton" style="display:none;">Copy to Clipboard</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
